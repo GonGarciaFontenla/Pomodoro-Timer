@@ -15,7 +15,7 @@ function updateTimer() {
     timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
 
-function switchMode() {
+function switchMode() { 
     isStudy = !isStudy;
     currentTime = isStudy ? studyTime : breakTime;
     statusElement.textContent = isStudy ? 'Tiempo de estudio' : 'Tiempo de descanso';
