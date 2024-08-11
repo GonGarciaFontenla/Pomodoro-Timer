@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+p {
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(34, 33, 33, 0.8); /* Fondo negro con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(34, 33, 33, 0.8); /* Sombra blanca suave */
+    z-index: 2;
+    width: 350px; /* Ajusta el ancho del contenedor */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    transition: background-color 0.3s;
+    flex: 1; /* Hace que los botones se expandan uniformemente */
+    margin: 0 10px; /* Añade margen entre los botones */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.circular-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    margin: 0 10px; /* Añade margen a los lados */
+}
+
+.circular-button img {
+    width: 25px;
+    height: 25px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#timer {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#pomodoroCount {
+    font-weight: bold;
+    color: #fff;
+}
+
+.background-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.438);
+    text-align: center;
+    z-index: 1;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+.carl-sagan {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 700px;
+    height: auto;
+    z-index: 1;
+}

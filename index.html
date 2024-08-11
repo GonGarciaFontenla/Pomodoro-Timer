@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reloj Pomodoro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="background-text">
+        "Never regard study as a duty, but as the enviable opportunity to learn"
+    </div>
     <div class="container">
         <h1>Reloj Pomodoro</h1>
         <div id="timer">60:00</div>
-        <button id="startBtn">Iniciar</button>
-        <button id="resetBtn">Reiniciar</button>
+        <div class="buttons-container">
+            <button id="startBtn">Iniciar</button>
+            <button id="pauseBtn">
+                <img id="pauseIcon" src="pause-icon.png" alt="Pausar" style="width: 20px; height: 20px;">
+            </button>
+            <button id="resetBtn">Reiniciar</button>
+        </div>
         <p id="status">Tiempo de estudio</p>
+        <p>Pomodoros completados: <span id="pomodoroCount">0</span></p>
+    </div>    
     </div>
+    <img src="carl-sagan.png" alt="Carl Sagan" class="carl-sagan"> <!-- Imagen de Carl Sagan -->
+    <audio id="alarmSound" src="alarm.wav" preload="auto"></audio>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
